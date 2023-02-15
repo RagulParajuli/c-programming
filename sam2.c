@@ -1,15 +1,14 @@
-//pointer to pointer
 #include<stdio.h>
+
 void main()
 {
-	int x;
-	printf("Enter a number:");
-	scanf("%d",&x);
-	int *ptr=&x;
-	int **pptr=&ptr;
-	printf("%d\n",x);
-	printf("%u\n",&x);
-	printf("%d\n",*ptr);
-	printf("%u\n",&ptr);
-	printf("%d\n",**pptr);
+	int sum,*a,*b;
+	sum=Sum(&a,&b);
+	printf("The sum, is %d",sum);
+}
+   Sum(int *x, int *y){
+	printf("Enter your integers:");
+	scanf("%d%d",&*x,&*y);
+	int sum=*x+*y;
+//		printf("The sum is %d\n",sum);
 }
